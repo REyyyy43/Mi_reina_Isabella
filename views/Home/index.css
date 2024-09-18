@@ -86,3 +86,7 @@ nav ul li ul li a:hover {
   .animate-slide-in {
     animation: slideIn 0.5s ease-in-out;
   }
+
+  .active-link {
+    border-bottom: 4px solid white;
+}

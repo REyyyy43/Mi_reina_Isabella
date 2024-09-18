@@ -16,16 +16,19 @@
 
     <!-- BARRA DE NAVEGACION -->
     <nav>
+        <!-- Información de contacto -->
         <div class="bg-cyan-950 items-center h-10 p-2 pb-2 flex">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
             </svg>
-            <p class="text-white font-semibold p-2">+58 212 555 55 55</p>
+            <p class="text-white text-xs md:text-md md:font-semibold p-2">+58 412 528 98 50</p>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
             </svg>
-            <p class="text-white font-semibold pl-2">Info@empresa.com</p>
+            <p class="text-white md:text-md text-sm md:font-semibold pl-2">contacto@mireinaisabella.com</p>
         </div>
+        
+        <!-- Menú principal -->
         <div class="bg-[#006262] h-20 p-2 flex items-center justify-between relative">
             <div class="flex text-xl font-semibold text-white p-1 rounded-lg items-center space-x-2">
                 <img class="w-56" src="/images/logo.svg" alt="Logo">
@@ -35,18 +38,20 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>
+            
+            <!-- Menú de navegación -->
             <div id="menu" class="hidden md:bg-none bg-[#006262] md:flex items-center justify-center flex-grow">
                 <ul class="text-center text-xl md:flex md:space-x-4">
-                    <li><a class="p-2 md:p-4 text-white" href="/">Inicio</a></li>
+                    <li><a class="p-2 md:p-4 text-white hover:border-b-4 hover:border-white active-link" href="/">Inicio</a></li>
                     <li class="relative group">
-                        <a class="p-2 md:p-4 text-white" href="/Resena/">Conócenos</a>
+                        <a class="p-2 md:p-4 text-white hover:border-b-4 hover:border-white" href="/Resena/">Conócenos</a>
                         <ul class="absolute bg-[#006262] hover:bg-[#166b6b] text-white hidden group-hover:block">
                             <li><a href="/whoIsRIS/" class="block transition ease-in-out p-2">Quiénes Somos</a></li>
                             <li><a href="/Contacto/" class="block transition ease-in-out p-2">Contacto</a></li>
                         </ul>
                     </li>
-                    <li><a class="p-2 md:p-4 text-white" href="#Marcas" onclick="seleccionar(this)">Nuestras Marcas</a></li>
-                    <li><a class="p-2 md:p-4 text-white" href="/Servicio/">Servicios</a></li>
+                    <li><a class="p-2 md:p-4 text-white hover:border-b-4 hover:border-white" href="#Marcas" onclick="seleccionar(this)">Nuestras Marcas</a></li>
+                    <li><a class="p-2 md:p-4 text-white hover:border-b-4 hover:border-white" href="/Servicio/">Servicios</a></li>
                 </ul>
             </div>
         </div>
@@ -77,9 +82,9 @@
     </section>
 
     <!-- NUESTROS CLIENTES -->
-    <section class="p-32 pt-2">
-    <div id="textos" class="p-6">
-    <h2 class="md:text-3xl text-sm font-bold text-center">NUESTROS CLIENTES</h2>
+    <section class="md:p-32 pt-2">
+    <div id="textos" class="md:p-6 p-4">
+    <h2 class="md:text-3xl text-xs font-bold text-center">NUESTROS CLIENTES</h2>
    <em>
     <p class="text-center md:text-base text-xs font-semibold font-normal text-sky-600">MI REINA ISABELLA C.A</p>
    </em>
@@ -129,7 +134,7 @@
                <div class="bg-[#00192E]/90 md:w-2/3 rounded-xl p-4 flex justify-center" data-aos="flip-left" >
                     <div class="text-center p-2 text-slate-100 flex justify-center items-center flex-col">
                         <h1 class="md:text-4xl text-xl font-bold">¿Donde estamos ubicados?</h1>
-                        <p class="p-4 md:text-base">Estamos úbicados en el Estado Lara, para conocer la ubicación exacta de cada una de nuestras instalaciones, te invitamos a visitar nuestra sección de contacto, donde podrás encontrar un mapa interactivo y toda la información de contacto necesaria para comunicarte con la sucursal más cercana a ti, o más conveniente para ti.</p>
+                        <p class="p-4 md:text-base text-xs">Estamos úbicados en el Estado Lara, para conocer la ubicación exacta de cada una de nuestras instalaciones, te invitamos a visitar nuestra sección de contacto, donde podrás encontrar un mapa interactivo y toda la información de contacto necesaria para comunicarte con la sucursal más cercana a ti, o más conveniente para ti.</p>
                         <a href="###" class="bg-[#006262] rounded-xl p-2">Click aqui para conocer todas nuestras locaciones</a>
                     </div>
                </div>
@@ -140,9 +145,9 @@
      </section>
 
     <!-- ELEGIR -->
-    <section class="p-32 pt-2">
+    <section class="md:p-32 pt-2">
         <div id="textos" class="p-4 flex flex-row">
-            <h2 class="md:text-4xl p-4 text-sm font-bold text-center">¿Por qué elegir Mi Reina Isabella?</h2>
+            <h2 class="md:text-4xl p-4 text-sm md:font-bold font-semibold text-center">¿Por qué elegir Mi Reina Isabella?</h2>
         </div>
         <div class="flex flex-col md:flex-row items-center justify-center gap-16">
             <div class="shadow4 flex justify-center h-44 w-52 rounded-lg bg-[#00859D] items-center p-4"
@@ -171,7 +176,7 @@
     
 
     <!-- NUESTRAS MARCAS -->
-    <section id="Marcas" class="p-32 bg-zinc-300 pt-2">
+    <section id="Marcas" class="md:p-32 bg-zinc-300 pt-2">
         <div id="textos" class="p-6">
         <h2 class="md:text-3xl text-sm font-bold text-center">NUESTRAS MARCAS</h2>
         <em>
@@ -209,20 +214,20 @@
     <!-- PREGUNTAS FRECUENTES -->
     <section>
         <div>
-            <div id="textos" class="flex p-4 font-bold text-3xl">
+            <div id="textos" class="flex p-4 font-bold md:text-3xl">
                 <h1>Preguntas
                     <br> Frecuentes</h1>
-                <p class="md:text-xl text-base pl-16 font-thin">Revisa nuestras preguntas frecuentes.
+                <p class="md:text-xl text-sm pl-16 font-thin">Revisa nuestras preguntas frecuentes.
                     <br> Si no encuentras la respuesta que necesitas puedes ponerte en contacto con nosotros. </p>
             </div>
             <div class="flex justify-end p-4">
-                <a class="bg-[#006262] rounded-lg p-2 text-white" href="#">Contactanos</a>
+                <a class="bg-[#006262] text-xs md:text-base rounded-lg p-2 text-white" href="#">Contactanos</a>
             </div>
             <div class="p-4 flex justify-center text-white">
                 <div class="flex shadow1 justify-center rounded-xl flex-col bg-[#00859D] md:w-3/5 w-full">
                     <div class="p-6 py-4 rounded-xl flex items-center">
-                        <span class="text-4xl font-extrabold">01</span>
-                        <li class="p-4 list-none text-2xl font-bold flex-1">¿Qué servicios ofrecen?</li>
+                        <span class="md:text-4xl font-extrabold">01</span>
+                        <li class="p-4 list-none md:text-2xl font-bold flex-1">¿Qué servicios ofrecen?</li>
                         <svg class="toggle-text w-12 h-12 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
@@ -231,17 +236,17 @@
                         <br>producción de alimentos para consumo animal, producción animal, logística y distribución.</p>
     
                     <div class="p-6 py-4 rounded-xl flex items-center">
-                        <span class="text-4xl font-extrabold">02</span>
-                        <li class="p-4 list-none text-2xl font-bold flex-1">¿Cuáles son sus números de contacto?</li>
+                        <span class="md:text-4xl font-extrabold">02</span>
+                        <li class="p-4 list-none md:text-2xl font-bold flex-1">¿Cuáles son sus números de contacto?</li>
                         <svg class="toggle-text w-12 h-12 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
                     </div>
-                    <p class="slide-toggle pl-3">Puede contactarnos al +1 234 567 8901 o info@example.com.</p>
+                    <p class="slide-toggle p-1 pl-3">Puede contactarnos al +58 412 528 98 50 o contacto@mireinaisabella.com</p>
     
                     <div class="p-6 py-4 rounded-xl flex items-center">
-                        <span class="text-4xl font-extrabold">03</span>
-                        <li class="p-4 list-none text-2xl font-bold flex-1">¿Distribuyen a nivel nacional?</li>
+                        <span class="md:text-4xl font-extrabold">03</span>
+                        <li class="p-4 list-none md:text-2xl font-bold flex-1">¿Distribuyen a nivel nacional?</li>
                         <svg class="toggle-text w-12 h-12 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
@@ -249,8 +254,8 @@
                     <p class="slide-toggle pl-3 ">Sí, ofrecemos distribución a nivel nacional.</p>
     
                     <div class="p-6 py-4 rounded-xl flex items-center">
-                        <span class="text-4xl font-extrabold">04</span>
-                        <li class="p-4 list-none text-2xl font-bold flex-1">¿Cómo puede convertirse mi marca en aliado y trabajar con ustedes?</li>
+                        <span class="md:text-4xl font-extrabold">04</span>
+                        <li class="p-4 list-none md:text-2xl font-bold flex-1">¿Cómo puede convertirse mi marca en aliado y trabajar con ustedes?</li>
                         <svg class="toggle-text w-12 h-12 cursor-pointer" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         </svg>
@@ -265,7 +270,7 @@
     <section>
         <div class="p-6">
             <div class="p-6 text-center">
-                <h1 id="textos" class="font-bold text-3xl">PONTE EN CONTACTO CON NOSOTROS</h1>
+                <h1 id="textos" class="font-bold md:text-3xl">PONTE EN CONTACTO CON NOSOTROS</h1>
                 <em>
                     <p class="text-center md:text-base text-xs font-semibold font-normal text-sky-600">MI REINA ISABELLA C.A</p>
                 </em>
@@ -275,29 +280,29 @@
                 <div class="flex flex-col p-4 space-y-4 w-full">
                     <div class="flex items-center p-2 space-x-4">
                         <div class="bg-[#006262] flex justify-center items-center rounded-full p-4">
-                            <img src="images/telefono.png" alt="Icono de teléfono" class="w-6">
+                            <img src="images/telefono.png" alt="Icono de teléfono" class="w-3 md:w-6">
                         </div>
                         <div>
-                            <h2 class="font-bold text-xl">Teléfonos:</h2>
-                            <p>+58 0212 555 55 55 / +58 0424 182 12 34</p>
+                            <h2 class="font-bold md:text-xl">Teléfonos:</h2>
+                            <p class="text-xs">+58 0212 555 55 55 / +58 412 528 98 50</p>
                         </div>
                     </div>
-                    <div class="flex items-center p-2 space-x-4">
+                    <div class="flex items-center md:p-2 space-x-4">
                         <div class="bg-[#006262] flex justify-center items-center rounded-full p-4">
-                            <img src="images/email.png" alt="Icono de correo electrónico" class="w-6">
+                            <img src="images/email.png" alt="Icono de correo electrónico" class="w-4 md:w-6">
                         </div>
                         <div>
-                            <h2 class="font-bold text-xl">Correos electrónicos:</h2>
-                            <p>ventas@sunegocio.com / info@sunegocio.com</p>
+                            <h2 class="font-bold md:text-xl">Correos electrónicos:</h2>
+                            <p class="text-xs">mireinaisabella@gmail.com / contacto@mireinaisabella.com</p>
                         </div>
                     </div>
-                    <div class="flex items-center p-2 space-x-4">
+                    <div class="flex items-center md:p-2 space-x-4">
                         <div class="bg-[#006262] flex justify-center items-center rounded-full p-4">
-                            <img src="images/icons8-location-50.png" alt="Icono de ubicación" class="w-14">
+                            <img src="images/icons8-location-50.png" alt="Icono de ubicación" class="md:h-6 md:w-12 w-20">
                         </div>
                         <div>
-                            <h2 class="font-bold text-xl">Ubicaciones:</h2>
-                            <p>
+                            <h2 class="font-bold md:text-xl">Ubicaciones:</h2>
+                            <p class="text-xs">
                                 Estamos ubicados en el Estado Lara, pero tenemos distintas locaciones, si quieres conocerlas todas o quieres saber cual está más cerca de ti, pulsa el siguiente enlace.
                                 <a href="/Contacto/" class="text-sky-600 underline">Conocer ubicaciones</a>
                             </p>
@@ -307,8 +312,8 @@
                 <!-- Contenedor de inputs -->
                 <form action="/send-email" method="POST">
                     <div class="p-4 w-full">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <input type="text" name="nombre" class="border border-zinc-400 p-2 rounded-lg w-full" placeholder="Nombre" required>
+                        <div class="md:grid p-4 flex flex-col md:grid-cols-2 gap-4">
+                            <input type="text" name="nombre" class="border border-zinc-400 p-2 rounded-lg w-full " placeholder="Nombre" required>
                             <input type="email" name="correo" class="border border-zinc-400 p-2 rounded-lg w-full" placeholder="Correo Electrónico" required>
                             <input type="text" name="telefono" class="border border-zinc-400 p-2 rounded-lg w-full" placeholder="Teléfono">
                             <input type="text" name="asunto" class="border border-zinc-400 p-2 rounded-lg w-full" placeholder="Asunto" required>
@@ -358,7 +363,7 @@
                     <div class="flex flex-col md:flex-row items-center">
                         <img class="p-2 w-8 h-8 md:w-12 md:h-12" src="/images/facebook.png" alt="Facebook"> 
                         <img class="p-2 w-8 h-8 md:w-12 md:h-12" src="/images/instagram.png" alt="Instagram">
-                        <img class="p-2 w-8 h-8 md:w-24 md:h-24" src="/images/whatsapp.png" alt="WhatsApp">
+                        <img class="p-2 w-8 h-8 md:w-12 md:h-12" src="/images/whatsapp.png" alt="WhatsApp">
                     </div>
                 </div>
             </div>
