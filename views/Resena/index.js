@@ -14,14 +14,17 @@ let swiper = new Swiper('.swiper-container', {
     },
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-
-    menuToggle.addEventListener('click', function() {
-        menu.classList.toggle('hidden');
+// Manejar el menú de navegación en dispositivos móviles
+const toggleButton = document.getElementById('menu-toggle');
+if (toggleButton) {
+    toggleButton.addEventListener('click', function() {
+        const menu = document.querySelector('.menu');
+        if (menu) {
+            // Alternar la visibilidad del menú
+            menu.classList.toggle('hidden');
+        }
     });
-});
+}
 
 // Remover la clase 'active-link' de todos los enlaces al cargar la página
 document.querySelectorAll('nav a').forEach(link => link.classList.remove('active-link'));
