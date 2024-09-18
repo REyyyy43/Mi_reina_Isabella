@@ -11,10 +11,10 @@ app.post('/send-email', (req, res) => {
 
     // Configurar el transporte de nodemailer
     let transporter = nodemailer.createTransport({
-        service: 'gmail',
+        service: 'gmail', // Usa 'gmail' como servicio
         auth: {
-            user: 'mireinaisabella@gmail.com', // Cambia esto por el correo del administrador
-            pass: 'tu-contraseña-o-contraseña-de-aplicación' // Usa una contraseña de aplicación si tienes 2FA activado
+            user: 'mireinaisabella003@gmail.com', // Correo del administrador
+            pass: 'ttkjwnbuayvldkzw' // Contraseña de aplicación
         }
     });
 
@@ -37,11 +37,11 @@ app.post('/send-email', (req, res) => {
     // Enviar el correo
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.log(error);
+            console.error('Error al enviar el correo:', error);
             return res.status(500).send('Error al enviar el correo.');
         }
         console.log('Correo enviado: ' + info.response);
-        res.status(200).send('Correo enviado exitosamente.');
+        alert.status(200).send('Correo enviado exitosamente.');
     });
 });
 
