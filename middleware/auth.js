@@ -46,9 +46,9 @@ app.post('/send-email', (req, res) => {
 });
 
 // Definir el puerto
-const port = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Iniciar el servidor
-app.listen(port, () => {
-    console.log(`Servidor corriendo en http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

@@ -1,5 +1,5 @@
 const PAGE_URL = process.env.NODE_ENV === 'production'
-? 'placeholder'
-: 'http://localhost:3001'
+? 'https://mi-reina-isabella.onrender.com'
+: 'http://localhost:3000'
 
 module.exports = { PAGE_URL };
