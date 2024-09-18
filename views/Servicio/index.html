@@ -17,44 +17,31 @@
 
     <!-- BARRA DE NAVEGACION -->
     <nav>
-        <!-- Información de contacto -->
-        <div class="bg-cyan-950 items-center h-10 p-2 pb-2 flex">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
-            </svg>
-            <p class="text-white text-xs md:text-md md:font-semibold p-2">+58 412 528 98 50</p>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-            </svg>
-            <p class="text-white md:text-md text-sm md:font-semibold pl-2">contacto@mireinaisabella.com</p>
-        </div>
-        
-        <!-- Menú principal -->
         <div class="bg-[#006262] h-20 p-2 flex items-center justify-between relative">
             <div class="flex text-xl font-semibold text-white p-1 rounded-lg items-center space-x-2">
                 <img class="w-56" src="/images/logo.svg" alt="Logo">
             </div>
-            <button id="menu-toggle" class="md:hidden w-10 bg-[#006262] p-2">
+            <button id="menu-toggle" class="md:hidden lg:hidden w-10 h-10 bg-[#004d40] rounded-full flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </button>
-            
-            <!-- Menú de navegación -->
-            <div id="menu" class="hidden md:bg-none bg-[#006262] md:flex items-center justify-center flex-grow">
+            <div class="menu hidden md:flex md:justify-center md:items-center md:right-56 md:pl-4">
+            <div  class="bg-[#006262] md:flex items-center justify-center flex-grow">
                 <ul class="text-center text-xl md:flex md:space-x-4">
-                    <li><a class="p-2 md:p-4 text-white hover:border-b-4 hover:border-white active-link" href="/">Inicio</a></li>
+                    <li><a class="p-2 md:p-4 text-white hover:border-b-4 hover:border-white" href="/">Inicio</a></li>
                     <li class="relative group">
                         <a class="p-2 md:p-4 text-white hover:border-b-4 hover:border-white" href="/Resena/">Conócenos</a>
-                        <ul class="absolute bg-[#006262] hover:bg-[#166b6b] text-white hidden group-hover:block">
-                            <li><a href="/whoIsRIS/" class="block transition ease-in-out p-2">Quiénes Somos</a></li>
-                            <li><a href="/Contacto/" class="block transition ease-in-out p-2">Contacto</a></li>
+                        <ul class="absolute bg-[#006262] text-white hidden group-hover:block transition-all ease-in-out duration-300">
+                            <li><a href="/whoIsRIS/" class="block p-2 hover:bg-[#004d40]">Quiénes Somos</a></li>
+                            <li><a href="/Contacto/" class="block p-2 hover:bg-[#004d40]">Contacto</a></li>
                         </ul>
                     </li>
                     <li><a class="p-2 md:p-4 text-white hover:border-b-4 hover:border-white" href="/" onclick="seleccionar(this)">Nuestras Marcas</a></li>
                     <li><a class="p-2 md:p-4 text-white hover:border-b-4 hover:border-white" href="/Servicio/">Servicios</a></li>
                 </ul>
             </div>
+        </div>
         </div>
     </nav>
 
