@@ -8,4 +8,11 @@ let map = L.map('map').setView([9.5, -68.0], 10); // Coordenadas aproximadas del
         .bindPopup('Estado Cojedes, Venezuela')
         .openPopup();
 
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.getElementById('menu-toggle');
+            const menu = document.getElementById('menu');
         
+            menuToggle.addEventListener('click', function() {
+                menu.classList.toggle('hidden');
+            });
+        });
