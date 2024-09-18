@@ -13,15 +13,15 @@ app.post('/send-email', (req, res) => {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'tu-correo@gmail.com', // Cambia esto por tu correo
+            user: 'mireinaisabella@gmail.com', // Cambia esto por el correo del administrador
             pass: 'tu-contraseña-o-contraseña-de-aplicación' // Usa una contraseña de aplicación si tienes 2FA activado
         }
     });
 
     // Contenido del correo
     let mailOptions = {
-        from: 'tu-correo@gmail.com',
-        to: 'destinatario@mi-reina-isabella.com', // Cambia esto por el correo de Mi Reina Isabella
+        from: correo, // El correo del cliente
+        to: 'mireinaisabella@gmail.com', // Correo del administrador
         subject: `Nuevo mensaje de ${nombre}: ${asunto}`,
         text: `
         Nombre: ${nombre}

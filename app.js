@@ -19,10 +19,12 @@ app.use(morgan('tiny')); // Mantenemos el logger de Morgan
 
 // Configurar el transporte de Nodemailer
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: 'smtp.gmail.com',
+    port: 587, // Usualmente es 587 para STARTTLS, 465 para SSL
+    secure: false, // Usa true si estás usando SSL/TLS
     auth: {
-        user: process.env.EMAIL_USER, // Usa tu email desde las variables de entorno
-        pass: process.env.EMAIL_PASS, // Usa la contraseña o contraseña de aplicación
+        user: process.env.EMAIL_USER, // Tu correo electrónico
+        pass: process.env.EMAIL_PASS, // Tu contraseña o contraseña de aplicación
     },
 });
 
@@ -49,7 +51,7 @@ app.post('/send-email', (req, res) => {
     // Enviar el correo
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.log(error);
+            console.error('Error al enviar el correo:', error);
             return res.status(500).send('Error al enviar el correo.');
         }
         console.log('Correo enviado: ' + info.response);
