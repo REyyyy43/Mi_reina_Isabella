@@ -46,7 +46,7 @@ app.post('/send-email', (req, res) => {
 });
 
 // Definir el puerto
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Iniciar el servidor
 app.listen(PORT, () => {

@@ -72,7 +72,7 @@ app.get('/faq', (req, res) => {
 app.use('/api/Preg', pregRouter);
 
 // Configura el puerto para que sea 3001
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
