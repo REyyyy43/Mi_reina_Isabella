@@ -5,7 +5,7 @@ let map = L.map('map').setView([9.5, -68.0], 10); // Coordenadas aproximadas del
     }).addTo(map);
 
     L.marker([9.5, -68.0]).addTo(map)
-        .bindPopup('Estado Cojedes, Venezuela')
+        .bindPopup('AV MOYETONES ENTRE CALLE 6 y 7 LOCAL NRO GALPON S/N ZONA INDUSTRIAL III Barquisimeto, EDO.LARA VENEZUELA')
         .openPopup();
 
         // Manejar el menú de navegación en dispositivos móviles
